@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://docs.opencv.org/3.4/opencv.js" onload="onOpenCvReady();"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image to Sketch Converter</h1>
+        <input type="file" id="upload" accept="image/*">
+        <div class="image-container">
+            <img id="original-image" alt="Original Image" style="display: none;">
+            <canvas id="sketch-canvas"></canvas>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
